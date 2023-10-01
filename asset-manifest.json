@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/edith-ai/static/css/main.3814fd6b.chunk.css",
+    "main.js": "/edith-ai/static/js/main.238a379d.chunk.js",
+    "main.js.map": "/edith-ai/static/js/main.238a379d.chunk.js.map",
+    "runtime-main.js": "/edith-ai/static/js/runtime-main.5f88cd9e.js",
+    "runtime-main.js.map": "/edith-ai/static/js/runtime-main.5f88cd9e.js.map",
+    "static/js/2.c078984f.chunk.js": "/edith-ai/static/js/2.c078984f.chunk.js",
+    "static/js/2.c078984f.chunk.js.map": "/edith-ai/static/js/2.c078984f.chunk.js.map",
+    "index.html": "/edith-ai/index.html",
+    "static/css/main.3814fd6b.chunk.css.map": "/edith-ai/static/css/main.3814fd6b.chunk.css.map",
+    "static/js/2.c078984f.chunk.js.LICENSE.txt": "/edith-ai/static/js/2.c078984f.chunk.js.LICENSE.txt",
+    "static/media/chat.css": "/edith-ai/static/media/background.70203a4b.png",
+    "static/media/edith.f180005b.png": "/edith-ai/static/media/edith.f180005b.png",
+    "static/media/edith_text.05aac18f.png": "/edith-ai/static/media/edith_text.05aac18f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f88cd9e.js",
+    "static/js/2.c078984f.chunk.js",
+    "static/css/main.3814fd6b.chunk.css",
+    "static/js/main.238a379d.chunk.js"
+  ]
+}
