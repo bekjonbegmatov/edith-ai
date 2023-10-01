@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&display=swap');
+.forma{
+    width: 400px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+
+}
+.blue{
+    color: rgb(143, 143, 247);
+}
+.blue:hover{
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .forma{
+        width: 380px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20%;
+    
+    }
+}

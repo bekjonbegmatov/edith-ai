@@ -1,0 +1,38 @@
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+.logo {
+    opacity: 0;
+}
+
+.flare {
+    position: absolute;
+    top: -50px;
+    /* Adjust the vertical position as needed */
+    left: -50px;
+    /* Adjust the horizontal position as needed */
+    width: 200px;
+    /* Adjust the size of the flare as needed */
+    height: 200px;
+    /* Adjust the size of the flare as needed */
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 70%);
+    opacity: 0;
+    animation: flareAnimation 1s linear forwards;
+}
+
+@keyframes flareAnimation {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
