@@ -1,12 +1,10 @@
-import Chat from "./components/chat";
-import Register from "./components/register/register";
-import Navbar from "./components/navbar";
+import Test_using from "./components/testusing";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
-import Auth_email from "./components/auth_email/authemail";
 
-import GlassParticleAnimation from "./components/logoanimation";
+import Introdusing from "./components/intro/introdusing";
 
+import Main_component from "./components/main";
 const App = () => {
   const [is_reg, setIs_reg] = useState(false)
   const [is_email_auth, setIs_email_auth] = useState(false)
@@ -32,14 +30,10 @@ const App = () => {
   return (
     <div className="container">
       <Router>
-        {(is_reg == true && is_email_auth == true) &&
-          <Chat />
-        }{is_reg == false &&
-          <Register />
-        }{is_email_auth == false && is_reg && 
-          <Auth_email />
-        }
-        {/* <GlassParticleAnimation /> */}
+        {localStorage.getItem('test_using') == 'yes' && <Test_using/>}
+        {localStorage.getItem('go_to_chat') == 'yes' && <Main_component/>}
+        {(localStorage.getItem('test_using') == 'no' && localStorage.getItem('go_to_chat') !== 'yes') && <Introdusing />}
+
       </Router>
 
     </div>

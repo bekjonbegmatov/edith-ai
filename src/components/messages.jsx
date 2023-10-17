@@ -12,19 +12,16 @@ function Messages(props) {
             {!props.is_user &&
                 <div className="chatgp">
                     <img src={immage} width='40px' alt="" />
-                    <div className="alert alert-success chat_message" role="alert">
-                        <Typewriter text={props.text} delay={25} />
+                    <div className="alert alert-info chat_message" role="alert">
+                        <Typewriter text={props.text} delay={10} />
 
-                        {/* <SyntaxHighlighter language="javascript" style={docco}>
-                            <Typewriter text={props.text} delay={25} />
-                        </SyntaxHighlighter> */}
                     </div>
 
                 </div>
             }{props.is_user &&
                 <div className='user'>
                     <p className=' odamoti_user '>Вы</p>
-                    <div class="alert alert-success user_message" role="alert">
+                    <div class="alert alert-secondary user_message" role="alert">
                         {props.text}
                     </div>
                 </div>

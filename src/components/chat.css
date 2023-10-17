@@ -1,71 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 
 body {
-    background-color: rgb(29, 31, 31);
-    color: white;
-    background-image: url('../assets/background.png');
-    background-size: 25%;
+  background-color: rgb(29, 31, 31);
+  color: white;
 }
 
 .header {
-    font-family: 'Righteous', cursive;
-    font-size: 40px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-
+  font-family: "Righteous", cursive;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
 }
 
+.flex_togo{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between;
+}
 .to_vniz {
-    position: fixed;
-    bottom: 0;
-    width: 80%;
+  position: fixed;
+  bottom: 0;
+  width: 95%;
 }
 
 .fleks {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .log_out {
-    cursor: pointer;
-    text-decoration: underline;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .log_out:hover {
-    color: rgba(110, 252, 88, 0.856);
+  color: rgba(110, 252, 88, 0.856);
 }
 
 @keyframes sendAnimation {
-    0% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(1);
+  }
 
-    50% {
-        transform: scale(0.5);
-    }
+  50% {
+    transform: scale(0.5);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
+}
+.cahat_massages {
+    margin-bottom: 60px;
+}
+button[type="submit"] {
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
-button[type='submit'] {
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+button[type="submit"]:focus {
+  outline: none;
 }
 
-button[type='submit']:focus {
-    outline: none;
-}
-
-button[type='submit']:active {
-    animation-name: sendAnimation;
+button[type="submit"]:active {
+  animation-name: sendAnimation;
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        background-size: 55%;
-    }
+  body {
+    background-size: 55%;
+  }
 }

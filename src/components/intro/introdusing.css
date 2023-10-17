@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito&family=Roboto+Mono:wght@500&display=swap");
+
+body {
+  background: #191c29;
+  font-family: "Gabarito", sans-serif;
+  font-family: "Roboto Mono", monospace;
+}
+.logo_main{
+    text-align: center;
+    font-size: 50px;
+}
+.col_border{
+    border: #424242 1px solid;
+    margin-left: 2px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.marpad{
+    margin-left: 5px;
+    margin-right: 5px;
+}

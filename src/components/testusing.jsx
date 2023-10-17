@@ -5,7 +5,7 @@ import Edith from "../assets/edith.png";
 // import { IconName } from "react-icons/fa";
 
 import "./chat.css";
-function Chat() {
+function Test_using() {
   //   useEffect(() => {
   //     fetch("https://edithai.pythonanywhere.com/chat/edith/v1", {
   //       method: "POST",
@@ -16,9 +16,8 @@ function Chat() {
   //         content: "привет",
   //         arr: chat_messages,
   //         is_context: "false",
-  //         test_chat: "false",
-  //         username : localStorage.getItem('user'),
-  //         email : localStorage.getItem('email')
+  //         test_chat: "true",
+  //         tocen : localStorage.getItem('test_using_tocen')
   //       }),
   //     })
   //       .then((response) => response.json())
@@ -75,14 +74,13 @@ function Chat() {
         content: prompt,
         arr: chat_messages,
         is_context: "true",
-        test_chat: "false",
-        username: localStorage.getItem("user"),
-        email: localStorage.getItem("email"),
+        test_chat: "true",
+        tocen: localStorage.getItem("test_using_tocen"),
       }),
     })
       .then((response) => response.json())
       .then((data) => {
-        localStorage.setItem("tocens", data[0].tocen);
+        localStorage.setItem("test_using_tocen", data[0].tocen);
         setResul(data[0].Ansver);
         add_chat_ansver(data[0].Ansver);
         localStorage.setItem("last_result_of_ai", data[0].Ansver);
@@ -117,25 +115,14 @@ function Chat() {
           <button
             className="btn btn-outline-danger"
             onClick={() => {
-              if (window.confirm("выйти из текущего аккаунта ?")) {
-                localStorage.clear();
-                window.location.reload();
-              }
+              localStorage.setItem("test_using", "no");
+              window.location.reload();
             }}
           >
             Выйти
           </button>
           <button className="btn btn-outline-warning">
-            {localStorage.getItem("tocens")}
-          </button>
-          <button
-            onClick={() => {
-              localStorage.setItem("go_to_chat", "no");
-              window.location.reload();
-            }}
-            className="btn btn-outline-success"
-          >
-            {localStorage.getItem("user")}
+            {localStorage.getItem("test_using_tocen")}
           </button>
         </div>
 
@@ -180,4 +167,4 @@ function Chat() {
   );
 }
 
-export default Chat;
+export default Test_using;
