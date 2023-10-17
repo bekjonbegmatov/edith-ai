@@ -135,7 +135,7 @@ function Chat() {
             }}
             className="btn btn-outline-success"
           >
-            {localStorage.getItem("user")}
+            Menu{localStorage.getItem("user")}
           </button>
         </div>
 

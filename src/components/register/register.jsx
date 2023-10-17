@@ -67,6 +67,7 @@ function Register() {
       alert("Пожалуйста введите пароль !");
       return false;
     }
+    setIs_press(true);
     fetch("https://edithai.pythonanywhere.com/create/user", {
       method: "POST",
       headers: {
@@ -98,7 +99,6 @@ function Register() {
           localStorage.setItem("is_registred", "false");
         }
       });
-    setIs_press(true);
   }
   function get_login(event) {
     let login = event.target.value;
