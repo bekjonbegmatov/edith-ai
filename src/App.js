@@ -9,9 +9,7 @@ const App = () => {
   const [notrhing, setNothing] = useState(false)
 
   useEffect(() => {
-    if (localStorage.getItem('go_to_chat') || localStorage.getItem('test_using')) {
-      setNothing(true)
-    }
+    localStorage.setItem('test_using' , 'no' )
   })
   const [sidebarOpen, setsidebarOpen] = useState(false);
   const openSidebar = () => {
@@ -26,9 +24,7 @@ const App = () => {
         {localStorage.getItem('test_using') == 'yes' && <Test_using/>}
         {localStorage.getItem('go_to_chat') == 'yes' && <Main_component/>}
         {(localStorage.getItem('test_using') == 'no' && localStorage.getItem('go_to_chat') !== 'yes') && <Introdusing />}
-        {notrhing && <Introdusing />}
       </Router>
-
     </div>
   );
 };
