@@ -93,6 +93,9 @@ function Introdusing() {
             window.location.reload()
           }} className="btn btn-outline-success">Ro'yxatdan o'tish</button>
           <hr />
+          <div>
+            So'rovlar tocen olish uchun <a href="http://t.me/+992929851515">Behruz</a> ga murijan qiling !
+          </div>
         </div>
       </div>
     </div>
